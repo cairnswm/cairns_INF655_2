@@ -23,8 +23,8 @@ function App() {
   return (
     <div className="App">
       <div>
-        {tasks.map(item => {
-          return <p>{item}</p>
+        {tasks.map((item,idx) => {
+          return <p key={idx}>{item}</p>
         })}
       </div>
       <TaskForm addTask={addTask} />

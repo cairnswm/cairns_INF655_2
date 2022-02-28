@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function TaskForm(props) {
-    const [taskName, setTaskName] = useState();
+    const [taskName, setTaskName] = useState("");
 
     return (
         <div>
